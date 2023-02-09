@@ -1,0 +1,55 @@
+.header-container {
+    width: 100%;
+    height: 50px;
+    background: white;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.15);
+    position: fixed;
+}
+
+.header {
+    width: 95%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.header-title-logo {
+    width: 30px;
+    filter: invert(45%) sepia(41%) saturate(7150%) hue-rotate(232deg) brightness(87%) contrast(83%);;
+}
+
+.header-title-text {
+    color: black;
+    font-weight: 500;
+    font-size: 1.25em;
+}
+
+.header-links {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-link {
+    color: white;
+    font-size: 1.25rem;
+    transition: all 200ms ease-in-out;
+    filter: brightness(0.5);
+}
+
+.header-link:hover {
+    color: slateblue;
+    filter: brightness(1);
+}
