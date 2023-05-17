@@ -1,7 +1,7 @@
 .header-container {
     width: 100%;
-    height: 50px;
-    background: white;
+    height: 60px;
+    background: var(--accent-color);
     box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.15);
     position: fixed;
 }
@@ -25,13 +25,14 @@
 
 .header-title-logo {
     width: 30px;
-    filter: invert(45%) sepia(41%) saturate(7150%) hue-rotate(232deg) brightness(87%) contrast(83%);;
+    filter: invert(14%) sepia(80%) saturate(430%) hue-rotate(47deg) brightness(100%) contrast(99%);
 }
 
 .header-title-text {
-    color: black;
-    font-weight: 500;
-    font-size: 1.25em;
+    color: var(--secondary-accent-color);
+    font-weight: bold;
+    font-size: 1.25rem;
+    font-style: italic;
 }
 
 .header-links {
@@ -43,13 +44,8 @@
 }
 
 .header-link {
-    color: white;
-    font-size: 1.25rem;
+    color: var(--secondary-accent-color);
+    font-size: 1.5rem;
     transition: all 200ms ease-in-out;
-    filter: brightness(0.5);
-}
-
-.header-link:hover {
-    color: slateblue;
-    filter: brightness(1);
+    background: var(--accent-color);
 }

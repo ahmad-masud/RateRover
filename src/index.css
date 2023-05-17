@@ -1,13 +1,26 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "optimistic_display";
+  src: local("optimistic_display_regular"),
+   url("./fonts/optimistic_display/optimistic_display_regular.ttf") format("truetype");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "optimistic_display";
+  src: local("optimistic_display_medium"),
+   url("./fonts/optimistic_display/optimistic_display_medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "optimistic_display";
+  src: local("optimistic_display_bold"),
+   url("./fonts/optimistic_display/optimistic_display_bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+body {
+  margin: 0;
+  font-family: 'optimistic_display';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

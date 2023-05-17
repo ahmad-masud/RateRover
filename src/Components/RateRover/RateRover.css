@@ -3,7 +3,7 @@
     height: 100vh;
 }
 
-.currency-converter {
+.rate-rover {
     display: block;
     position: absolute;
     top: 50%;
@@ -11,38 +11,43 @@
     transform: translate(-50%, -50%);
     width: 512px;
     box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.15);
-    border-radius: 10px;
+    border-radius: 25px;
     background: white;
+    padding: 10px;
 }
 
-.currency-converter-container {
+.rate-rover-container {
     display: flex;
     flex-direction: column;
     width: 90%;
-    margin: auto;
+    margin: 20px auto;
+    gap: 10px;
 }
 
 .label {
     font-size: 1.25em;
-    margin-top: 10px;
-    font-weight: bold;
+    font-weight: 500;
 }
 
-.input {
+.currency-input {
     font-size: 1.25em;
     border-radius: 5px;
-    border-width: 1px;
-    padding: 15px 10px;
+    border: solid 1px rgba(0,0,0,0.2);
+    padding: 10px 10px;
+}
+
+.currency-from-select, .currency-to-select {
+    font-size: 1.25em;
 }
 
 .convert-button {
-    color: white;
+    color: var(--secondary-accent-color);
     font-size: 1.25em;
     margin-top: 10px;
     padding: 15px 10px;
-    border-radius: 5px;
+    border-radius: 50px;
     border-width: 0;
-    background: slateblue;
+    background: var(--accent-color);
     transition: all 200ms ease-in-out;
     cursor: pointer;
     font-weight: bold;
@@ -55,6 +60,7 @@
 .currency-output {
     font-size: 1.25em;
     font-weight: 500;
+
 }
 
 @media only screen and (max-width: 572px) {

@@ -1,3 +1,10 @@
-body {
-   background: slateblue; 
+* {
+   margin: 0;
+   padding: 0;
+}
+
+:root {
+   --accent-color: #afe67f;
+   --secondary-accent-color: #1d3208;
+   --font-color: black;
 }

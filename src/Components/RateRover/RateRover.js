@@ -1,39 +1,34 @@
 import React, { useState, useEffect } from 'react';
+import Select from 'react-select'
 import axios from 'axios';
-import './CurrencyConverter.css'
+import './RateRover.css'
 
-function CurrencyConverter() {
+function RateRover() {
+  const apiKey = 'a4f445c212e54cca9ccf72f8038d2e09';
+
   const [amount, setAmount] = useState(0);
   const [fromCurrency, setFromCurrency] = useState('USD');
   const [toCurrency, setToCurrency] = useState('EUR');
   const [convertedAmount, setConvertedAmount] = useState(0);
   const [currencies, setCurrencies] = useState([]);
-  const [apiKey, setAPIKey] = useState('a4f445c212e54cca9ccf72f8038d2e09');
   const [currencyAbreviation, setCurrencyAbreviation] = useState('EUR')
 
   useEffect(() => {
     async function fetchCurrencies() {
       try {
         const response = await axios.get(`https://openexchangerates.org/api/currencies.json?app_id=${apiKey}`);
-        setCurrencies(response.data);
+        const newCurrencies = Object.keys(response.data).map((code) => ({
+          value: code,
+          label: code + ' - ' + response.data[code]
+        }));
+        setCurrencies(newCurrencies);
+
       } catch (err) {
         console.error(err);
       }
     };
     fetchCurrencies();
   }, [apiKey]);
-
-  function handleAmountChange(e) {
-    setAmount(e.target.value);
-  };
-
-  function handleFromCurrencyChange(e) {
-    setFromCurrency(e.target.value);
-  };
-
-  function handleToCurrencyChange(e) {
-    setToCurrency(e.target.value);
-  };
 
   async function handleConvert() {
     try {
@@ -47,10 +42,22 @@ function CurrencyConverter() {
     }
   };
 
+  function handleAmountChange(e) {
+    setAmount(e.target.value);
+  };
+
+  function handleFromCurrencyChange(option) {
+    setFromCurrency(option.value);
+  };
+
+  function handleToCurrencyChange(option) {
+    setToCurrency(option.value);
+  };
+
   return (
     <div className='container'>
-      <div className='currency-converter'>
-        <div className='currency-converter-container'>
+      <div className='rate-rover'>
+        <div className='rate-rover-container'>
           <label className='label'>Amount</label>
           <input
             type="number"
@@ -60,21 +67,23 @@ function CurrencyConverter() {
             className='currency-input input'
           />
           <label className='label'>From</label>
-          <select value={fromCurrency} onChange={handleFromCurrencyChange} className='currency-from-select input'>
-            {Object.keys(currencies).map((code) => (
-              <option key={code} value={code} className='currency-from-option'>
-                {code} - {currencies[code]}
-              </option>
-            ))}
-          </select>
+          <Select 
+            options={currencies} 
+            onChange={handleFromCurrencyChange} 
+            defaultValue={[{value: 'USD', label: 'USD - United States Dollar'}]} 
+            isSearchable 
+            isClearable 
+            className='currency-from-select input'
+          />
           <label className='label'>To</label>
-          <select value={toCurrency} onChange={handleToCurrencyChange} className='currency-to-select input'>
-            {Object.keys(currencies).map((code) => (
-              <option key={code} value={code} className='currency-to-option'>
-                {code} - {currencies[code]}
-              </option>
-            ))}
-          </select>
+          <Select 
+            options={currencies} 
+            onChange={handleToCurrencyChange} 
+            defaultValue={[{value: 'EUR', label: 'EUR - Euro'}]} 
+            isSearchable 
+            isClearable 
+            className='currency-to-select input'
+          />
           <button onClick={handleConvert} className='convert-button'>Convert</button>
           <p className='currency-output'>{convertedAmount} {currencyAbreviation}</p>
         </div>
@@ -83,4 +92,4 @@ function CurrencyConverter() {
   );
 };
 
-export default CurrencyConverter;
+export default RateRover;
