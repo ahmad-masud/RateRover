@@ -1,19 +1,18 @@
 .container {
     width: 100%;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .rate-rover {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 512px;
     box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.15);
     border-radius: 25px;
     background: white;
     padding: 10px;
+    margin: 10px;
 }
 
 .rate-rover-container {
