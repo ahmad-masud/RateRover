@@ -1,6 +1,6 @@
 {
   "homepage": "https://ahmad-masud.github.io/RateRover",
-  "name": "currency-converter",
+  "name": "RateRover",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
