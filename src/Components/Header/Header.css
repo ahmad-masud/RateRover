@@ -3,7 +3,6 @@
     height: 60px;
     background: var(--accent-color);
     box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.15);
-    position: fixed;
 }
 
 .header {
@@ -11,8 +10,9 @@
     height: 100%;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    display: flex;
 }
 
 .header-title {
@@ -33,19 +33,4 @@
     font-weight: bold;
     font-size: 1.25rem;
     font-style: italic;
-}
-
-.header-links {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-.header-link {
-    color: var(--secondary-accent-color);
-    font-size: 1.5rem;
-    transition: all 200ms ease-in-out;
-    background: var(--accent-color);
 }
