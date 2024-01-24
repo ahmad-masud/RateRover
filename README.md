@@ -1,4 +1,5 @@
-# Getting Started with Create React App
+# RateRover
+![RateRover Gif](https://github.com/ahmad-masud/RateRover/assets/96448477/1d24e125-305f-4251-a020-bd9d581e9479)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
