@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/RateRover/static/css/main.d7488cbb.css",
-    "main.js": "/RateRover/static/js/main.cd12f129.js",
-    "static/js/787.f4b48ae0.chunk.js": "/RateRover/static/js/787.f4b48ae0.chunk.js",
+    "main.css": "/RateRover/static/css/main.05853186.css",
+    "main.js": "/RateRover/static/js/main.fac63118.js",
+    "static/js/592.e2eaebe8.chunk.js": "/RateRover/static/js/592.e2eaebe8.chunk.js",
     "static/media/optimistic_display_bold.ttf": "/RateRover/static/media/optimistic_display_bold.7bb5bcbaff7101b549fb.ttf",
     "static/media/optimistic_display_regular.ttf": "/RateRover/static/media/optimistic_display_regular.a2d89457e5008e42c82a.ttf",
     "static/media/optimistic_display_medium.ttf": "/RateRover/static/media/optimistic_display_medium.e0b75e72a3e72ebb582b.ttf",
     "index.html": "/RateRover/index.html",
-    "main.d7488cbb.css.map": "/RateRover/static/css/main.d7488cbb.css.map",
-    "main.cd12f129.js.map": "/RateRover/static/js/main.cd12f129.js.map",
-    "787.f4b48ae0.chunk.js.map": "/RateRover/static/js/787.f4b48ae0.chunk.js.map"
+    "main.05853186.css.map": "/RateRover/static/css/main.05853186.css.map",
+    "main.fac63118.js.map": "/RateRover/static/js/main.fac63118.js.map",
+    "592.e2eaebe8.chunk.js.map": "/RateRover/static/js/592.e2eaebe8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d7488cbb.css",
-    "static/js/main.cd12f129.js"
+    "static/css/main.05853186.css",
+    "static/js/main.fac63118.js"
   ]
 }
