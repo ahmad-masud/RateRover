@@ -35,7 +35,7 @@ function RateRover() {
       const response = await axios.get(`https://openexchangerates.org/api/latest.json?app_id=${apiKey}`);
       const { rates } = response.data;
       const conversionRate = rates[toCurrency] / rates[fromCurrency];
-      setConvertedAmount(amount * conversionRate);
+      setConvertedAmount(Math.round(amount * conversionRate * 100) / 100);
       setCurrencyAbreviation(toCurrency)
     } catch (err) {
       console.error(err);

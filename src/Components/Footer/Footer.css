@@ -6,7 +6,7 @@
     justify-content: space-evenly;
     margin-top: auto;
     padding: 50px 0 50px 0;
-    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.1);
 }
 
 .footer-links {
