@@ -1,5 +1,5 @@
 # RateRover
-![RateRover](images/raterover.gif)
+![RateRover](resources/raterover.gif)
 
 ## Introduction
 RateRover is a currency converter app developed using React. It offers a user-friendly interface to quickly and easily convert amounts between different currencies. Utilizing real-time exchange rates, RateRover ensures that users receive the most accurate and up-to-date conversion results.
