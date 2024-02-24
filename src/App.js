@@ -1,7 +1,7 @@
 import './App.css';
-import RateRover from './Components/RateRover/RateRover.js';
-import Header from './Components/Header/Header.js';
-import Footer from './Components/Footer/Footer.js';
+import RateRover from './components/RateRover/RateRover.js';
+import Header from './components/Header/Header.js';
+import Footer from './components/Footer/Footer.js';
 
 function App() {
   return (

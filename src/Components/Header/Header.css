@@ -24,8 +24,8 @@
 }
 
 .header-title-logo {
-    width: 30px;
-    filter: invert(14%) sepia(80%) saturate(430%) hue-rotate(47deg) brightness(100%) contrast(99%);
+    font-size: 2em;
+    color: black;
 }
 
 .header-title-text {

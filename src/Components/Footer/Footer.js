@@ -5,17 +5,14 @@ function Footer() {
   return (
     <div className='footer'>
       <div className='footer-links'>
-          <a href='https://github.com/ahmad-masud' className='footer-link' target="_blank" rel="noreferrer">
-            <i className="fa-brands fa-github icon"></i>
+          <a aria-label='github' href='https://github.com/ahmad-masud' className='footer-link' target="_blank" rel="noreferrer">
+            <i className="bi bi-github icon"></i>
           </a>
-          <a href='https://www.facebook.com/AhmadMasud25' className='footer-link' target="_blank" rel="noreferrer">
-            <i className="fa-brands fa-facebook icon"></i>
+          <a aria-label='linkedin' href='https://www.linkedin.com/in/ahmadmasud/' className='footer-link' target="_blank" rel="noreferrer">
+            <i className="bi bi-linkedin icon"></i>
           </a>
-          <a href='https://www.linkedin.com/in/ahmadmasud/' className='footer-link' target="_blank" rel="noreferrer">
-            <i className="fa-brands fa-linkedin icon"></i>
-          </a>
-          <a href='https://twitter.com/_AhmadMasud' className='footer-link' target="_blank" rel="noreferrer">
-            <i className="fa-brands fa-square-twitter icon"></i>
+          <a aria-label='mail' href='mailto:ahmadmasud25@hotmail.com' className='footer-link' target="_blank" rel="noreferrer">
+            <i className="bi bi-envelope-fill icon"></i>
           </a>
       </div>
       <span className='footer-copyright-text'>
